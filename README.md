@@ -1,12 +1,12 @@
-# Testing MCI web with cypress
+# Testing MCI web with Cypress
 ---
 ## Section 1: Quick Overview
 #### Overview
-Here we are writing some test about login on MCI web with cypress and gherklin syntax.
+Here we are writing some tests about login on MCI web with cypress and gherklin syntax.
 
 #### Road map
 We expect login should be successfully done and other things should load correctly.
-In next steps we trying to create a session to login automatically.
+In the next steps, we trying to create a session to log in automatically.
 
 #### Configuration
 We have ```baseUrl:"http://my.mci.ir"``` and ```specPattern:'cypress/e2e/**/*.feature'``` with this syntax. It should be written in *cypress.config.js* in e2e block.
@@ -34,8 +34,8 @@ We are using VSCode with this setting below:
   "files.autoSave": "afterDelay",
 }
 ```
-We are cofigure our step in ```cucumberautocomplete.steps``` so we can easily go to each file with holding
-```ctrl``` and click on each sentences in scenarios.
+We are configured our step in ```cucumberautocomplete.steps``` so we can easily go to each file with holding
+```ctrl``` and click on each sentence in scenarios.
 We have to set the code below in *cypress.config.js*.
 ```
 "cypress-cucumber-preprocessor": {
@@ -63,12 +63,12 @@ Using ```pip install {package name}```
 ```
 
 #### Folder Structure
-We have our features are in `cypress/e2e/**.feature` and our steps are in  `cypress/support/step_definitions/**.js`
+We have our features in `cypress/e2e/**.feature` and our steps are in  `cypress/support/step_definitions/**.js`
 We have some custome commands in `cypress/support/commands.js`
 
 #### Report
-For reporter we are using Mochawsome reporter.
-We should install this packages:
+For reporter, we are using Mochawsome reporter.
+We should install these packages:
 
 ```
 mochawsome
@@ -76,7 +76,7 @@ cypress-mochawesome-reporter
 mochawesome-report-generator
 ```
 
-Then we should do some steups:
+Then we should do some setup:
 Adding code below to *cypress.config.js* in e2e block.
 
 ```
@@ -91,7 +91,7 @@ setupNodeEvents(on, config) {
     },
 ```
 
-And this one to *cypress/support/e2e.js*.
+And this one too *cypress/support/e2e.js*.
 
 ```
 import 'cypress-mochawesome-reporter/register';
@@ -102,6 +102,5 @@ import 'cypress-mochawesome-reporter/register';
 Amir ghara zibaie (Mr.Alf)
 
 #### Links
-For getting help and more guide follow:
-`https://docs.cypress.io/guides/overview/why-cypress`
-official cypress doc
+For help and more guides follow:
+[official cypress doc](https://docs.cypress.io/guides/overview/why-cypress)
